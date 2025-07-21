@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFuel Kitchen - Healthy Meals for Gym Goers</title>
+    <link rel="shortcut icon" href="img/favicn.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+           
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+    <!-- Tailwind CSS for rapid UI development -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+           
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                FitFuel <span class="text-indigo-600">Kitchen</span>
+                           
+
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-600 hover:text-indigo-700 transition duration-300">Home</a>
+                <a href="#menu" class="text-gray-600 hover:text-indigo-700 transition duration-300">Menu</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-700 transition duration-300">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-700 transition duration-300">Contact</a>
+            </div>
+            <a href="#cta" class="hidden md:block btn-primary py-2 px-4 rounded-full">
+                Order Now
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-indigo-500">Home</a>
+            <a href="#menu" class="block py-2 text-gray-600 hover:text-indigo-500">Menu</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-500">About</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-orange-500">Contact</a>
+            <a href="#cta" class="block mt-2 btn-primary py-2 px-4 rounded-full text-center">Order Now</a>
+        </div>
+    </header>
+    <DIV style="height: 25px;">
+        
+    </DIV>
+<section id="home">
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-container">
+        <!-- Left Side: Text Content -->
+        <div class="hero-text">
+            <p class="overline">NUtrition</p>
+            <h1>EAT WITH <strong>PURPOSE</strong></h1>
+            <p>Become more efficient at hitting your macros.</p>
+            <button class="hero-button">Explore Us</button>
+        </div>
+
+        <!-- Right Side: Image Collage -->
+        <div class="hero-images">
+            <!-- Decorative Circles -->
+            <div class="deco-shape deco-1"></div>
+            <div class="deco-shape deco-2"></div>
+            <div class="deco-shape deco-3"></div>
+
+<div class="user-icon user-1"></div>
+<div class="user-icon user-2"></div>
+
+           
+            <!-- Main Image Blobs -->
+            <div class="image-blob image-secondary-1"></div>
+            <div class="image-blob image-secondary-2"></div>
+            <div class="image-blob image-main"></div>
+        </div>
+    </div>
+    </section>
+
+
+        <!-- Featured Meals Section -->
+        <section id="menu" class="py-20 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Our Most Popular <span class="text-indigo-600">Meals</span></h2>
+                    <p class="text-gray-600 mt-2">Crafted by chefs, approved by nutritionists.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Meal Card 1 -->
+                    <div class="meal-card bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/salmon.png" alt="Grilled Salmon Power Bowl" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Grilled Salmon Power Bowl</h3>
+                            <p class="text-gray-600 mb-4">Omega-3 rich salmon with quinoa, avocado, and fresh greens.</p>
+                            <div class="flex justify-between text-sm font-semibold text-gray-700">
+                                <span>Protein: 45g</span>
+                                <span>Carbs: 35g</span>
+                                <span>Fat: 20g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Meal Card 2 -->
+                    <div class="meal-card bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/steak.png" alt="Lean Steak & Sweet Potato" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Lean Steak & Sweet Potato</h3>
+                            <p class="text-gray-600 mb-4">Tender sirloin steak with roasted sweet potatoes and asparagus.</p>
+                            <div class="flex justify-between text-sm font-semibold text-gray-700">
+                                <span>Protein: 55g</span>
+                                <span>Carbs: 40g</span>
+                                <span>Fat: 18g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Meal Card 3 -->
+                    <div class="meal-card bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <img src="img/chicken salad.png" alt="Protein-Packed Chicken Salad" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Hercules Chicken Salad</h3>
+                            <p class="text-gray-600 mb-4">Grilled chicken breast, mixed greens, nuts, and a light vinaigrette.</p>
+                            <div class="flex justify-between text-sm font-semibold text-gray-700">
+                                <span>Protein: 50g</span>
+                                <span>Carbs: 15g</span>
+                                <span>Fat: 22g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="img/kitchen.avif" alt="Our Kitchen" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Where Nutrition Meets Great <span class="text-indigo-600">Taste</span></h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            FitFuel Kitchen was born from a simple idea: eating healthy shouldn't be boring. As lifelong fitness enthusiasts, we were tired of bland, repetitive meals. We teamed up with professional chefs and nutritionists to create a menu that's not only packed with the protein and nutrients you need to perform but is also bursting with flavor.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Every ingredient is sourced locally, and every meal is cooked to perfection. We're here to support your fitness journey, one delicious bite at a time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Healthy Never Tasted So <span class="text-indigo-600">Good</span></h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Protein provides the essential amino acids needed to repair the micro-tears in muscles caused by exercise, facilitating recovery and growth. Many traditional Indian diets are carbohydrate-centric (roti, rice), and while they include protein sources like dal, the quantity is often insufficient to meet the higher demands of muscle recovery.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                           We've got you covered! Our kitchen serves up delicious veg and non-veg dishes, so no one misses out. Plus, crush your fitness goals with our creamy, muscle-building protein shakes. All the flavour you love, at prices you'll love even more!
+                        </p>
+                    </div>
+
+                    <div class="md:w-1/2">
+                        <img src="img/ambi.jpg" alt="Our Kitchen" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="img/prutini.jpg" alt="Our Kitchen" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Order. Sip. Recover. It's that <span class="text-indigo-600">Fast</span></h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                           We offer a wide range of protein shakes which can be customized as per your macros . We use whey protein only from trustworthy brands . 
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                           Fuel your recovery with a delicious blend of high-quality protein and your favorite fruits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">What Our Athletes Are <span class="text-indigo-600">Saying</span></h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 mb-4">"Finally, a place that gets it! The food is incredible and helps me hit my macros without even thinking about it. The Lean Steak is my go-to after a heavy leg day."</p>
+                        <div class="font-bold text-gray-800">- Piyush, Personal Trainer</div>
+                        <div class="text-indigo-500 mt-1">★★★★★</div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 mb-4">"As a competitor, my diet is strict. FitFuel Kitchen makes meal prep so easy and delicious. It's a game-changer for my routine."</p>
+                        <div class="font-bold text-gray-800">- Sarup, Bodybuilder</div>
+                        <div class="text-indigo-500 mt-1">★★★★★</div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 mb-4">"I just love the food! It's healthy, tastes amazing, and saves me so much time. The staff is super friendly too!"</p>
+                        <div class="font-bold text-gray-800">- Borun, Gym Enthusiast</div>
+                        <div class="text-indigo-500 mt-1">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="bg-indigo-500 text-white section-fade-in">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Elevate Your Diet?</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">Join the FitFuel family and get 10% off your first online order. Your body will thank you.</p>
+                <a href="#" class="bg-white text-indigo-500 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300">
+                    Claim Your Discount
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4">FitFuel Kitchen</h3>
+                    <p class="text-gray-400">High-protein meals for peak performance. Located in the heart of the city, we're dedicated to fueling your fitness journey.</p>
+                </div>
+                <!-- Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-white">Menu</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Fitness Ave, Howrah, WB</li>
+                        <li>Email: contact@fitfuel.kitchen</li>
+                        <li>Phone: (123) 456-7890</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.161 2.065c-1.058.048-1.675.21-2.227.412a2.893 2.893 0 00-1.064.742 2.893 2.893 0 00-.742 1.064c-.202.552-.364 1.17-.412 2.227-.048 1.05-.058 1.37-.058 3.504s.01 2.454.058 3.504c.048 1.058.21 1.675.412 2.227a2.893 2.893 0 00.742 1.064 2.893 2.893 0 001.064.742c.552.202 1.17.364 2.227.412 1.05.048 1.37.058 3.504.058s2.454-.01 3.504-.058c1.058-.048 1.675-.21 2.227-.412a2.893 2.893 0 001.064-.742 2.893 2.893 0 00.742-1.064c.202-.552.364-1.17.412-2.227.048-1.05.058-1.37.058-3.504s-.01-2.454-.058-3.504c-.048-1.058-.21-1.675-.412-2.227a2.893 2.893 0 00-.742-1.064 2.893 2.893 0 00-1.064-.742c-.552-.202-1.17-.364-2.227-.412-1.05-.048-1.37-.058-3.504-.058s-2.454.01-3.504.058zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 14a2 2 0 110-4 2 2 0 010 4zm6.4-8.85a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" clip-rule="evenodd" /></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 FitFuel Kitchen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
